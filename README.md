@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hello! Glad you have visited my profile 👋
 
 <!--
 **farefray/farefray** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
