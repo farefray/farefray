@@ -73,16 +73,16 @@
   <rect x="546" y="165" width="10" height="16" rx="1" fill="#8ad295" class="cursor"/>
   <path d="M490 262V280 M445 280H535" stroke="#4b4245" stroke-width="13" stroke-linecap="round"/>
 
-  <!-- coffee steam sits behind the note and cup -->
-  <path d="M791 246 C776 230 802 218 788 202" class="steam"/>
-  <path d="M815 246 C831 228 806 216 820 198" class="steam two"/>
-
   <!-- sticky note -->
   <g transform="rotate(4 756 188)">
     <rect x="720" y="146" width="72" height="70" rx="3" fill="#f0b8cc" class="outline"/>
     <text x="730" y="175" class="note" fill="#4c3444">TODO:</text>
     <text x="730" y="197" class="note" fill="#4c3444">EVERYTHING</text>
   </g>
+
+  <!-- coffee steam and cup sit in front of the note -->
+  <path d="M791 246 C776 230 802 218 788 202" class="steam"/>
+  <path d="M815 246 C831 228 806 216 820 198" class="steam two"/>
 
   <!-- a small cortado: still critical infrastructure -->
   <ellipse cx="804" cy="298" rx="47" ry="8" fill="#564746" opacity=".18"/>
