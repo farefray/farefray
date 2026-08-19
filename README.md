@@ -4,7 +4,7 @@
   <img alt="A rainy late-shift desk with a terminal reporting status: probably fine, a custom split trackball keyboard, and a small cortado" src="./assets/late-shift-dark.svg" width="100%">
 </picture>
 
-<p align="center"><em>Fueled by coffee and a completely reasonable amount of existential dread.</em></p>
+<p align="center"><em>Work continues under a reasonable amount of existential dread.</em></p>
 
 <details>
 <summary><strong>open the suspicious drawer</strong></summary>
@@ -13,14 +13,9 @@
 
 You found:
 
-- one emergency coffee bean
+- 18 g of emergency coffee beans
 - an adapter for a port that no longer exists
 - a `TODO` from 2019
 - no answers
-
-```console
-$ cat meaning_of_life.txt
-TODO
-```
 
 </details>
