@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+  <title id="title">The late shift, somehow still continuing into daylight</title>
+  <desc id="desc">A cozy light desk scene. Rain falls outside, a terminal says status: probably fine, beside a split keyboard with two red trackballs and a small cortado.</desc>
+  <style>
+    .outline { stroke: #483b3a; stroke-width: 4; stroke-linejoin: round; }
+    .thin { stroke: #967a72; stroke-width: 3; stroke-linecap: round; }
+    .terminal { font: 16px ui-monospace, SFMono-Regular, Consolas, monospace; fill: #eee8df; }
+    .small { font: 700 11px ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: 1.2px; }
+    .note { font: 700 9px ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .45px; }
+    .key { fill: #4c484f; stroke: #332b2d; stroke-width: 2; }
+    .trackball { fill: #8f2836; stroke: #332b2d; stroke-width: 3; }
+    .rain { stroke: #4f91ad; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 12 26; animation: rainfall 1.2s linear infinite; }
+    .rain.slow { animation-duration: 1.7s; animation-delay: -.8s; opacity: .5; }
+    .cursor { animation: blink 1.05s steps(1) infinite; }
+    .steam { fill: none; stroke: #9c796d; stroke-width: 5; stroke-linecap: round; animation: steam 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center bottom; }
+    .steam.two { animation-delay: -1.45s; }
+    .screen-glow { animation: glow 4s ease-in-out infinite; }
+    @keyframes rainfall { to { stroke-dashoffset: -38; } }
+    @keyframes blink { 0%, 47% { opacity: 1; } 48%, 100% { opacity: 0; } }
+    @keyframes steam { 0%, 100% { opacity: .18; transform: translateY(5px) scale(.94); } 50% { opacity: .88; transform: translateY(-5px) scale(1.04); } }
+    @keyframes glow { 0%, 100% { opacity: .88; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+
+  <rect width="960" height="360" rx="26" fill="#e9ddce"/>
+  <rect x="18" y="18" width="924" height="324" rx="19" fill="#f5eadc" stroke="#c5a997" stroke-width="3"/>
+
+  <!-- rainy window -->
+  <rect x="48" y="44" width="214" height="162" rx="8" fill="#907a70" class="outline"/>
+  <rect x="59" y="55" width="192" height="140" fill="#b9d8df"/>
+  <circle cx="204" cy="87" r="23" fill="#f8cc79" opacity=".95"/>
+  <circle cx="216" cy="77" r="23" fill="#b9d8df"/>
+  <path d="M59 160 C91 139 118 151 145 136 C175 119 206 137 251 105 V195 H59Z" fill="#829e9f"/>
+  <path d="M71 57V194 M94 57V194 M121 57V194 M151 57V194 M181 57V194 M211 57V194 M239 57V194" class="rain"/>
+  <path d="M82 57V194 M136 57V194 M194 57V194 M229 57V194" class="rain slow"/>
+  <path d="M155 55V195 M59 125H251" stroke="#826f68" stroke-width="7"/>
+  <rect x="45" y="203" width="220" height="12" rx="5" fill="#9f7b68" class="outline"/>
+
+  <!-- drooping plant -->
+  <path d="M92 243 C83 224 80 211 84 194 M91 235 C111 224 119 212 121 199 M89 228 C70 221 62 210 61 199" fill="none" stroke="#4f8e65" stroke-width="5" stroke-linecap="round"/>
+  <path d="M83 210 C69 208 64 199 65 192 C77 191 85 197 83 210Z M100 226 C116 225 122 215 121 207 C108 207 100 214 100 226Z M77 225 C64 224 57 216 58 209 C69 208 77 214 77 225Z" fill="#6da376"/>
+  <path d="M61 238H118L111 285H69Z" fill="#bf765d" class="outline"/>
+  <path d="M69 253H112" class="thin" opacity=".55"/>
+
+  <!-- tiny wall note -->
+  <g transform="rotate(-2 837 91)">
+    <rect x="786" y="52" width="107" height="80" rx="4" fill="#ffe19a" class="outline"/>
+    <text x="839.5" y="75" text-anchor="middle" class="small" fill="#4b3f32">DAYS SINCE</text>
+    <text x="839.5" y="93" text-anchor="middle" class="small" fill="#4b3f32">THE INCIDENT</text>
+    <text x="839.5" y="121" text-anchor="middle" font-family="ui-monospace, Consolas, monospace" font-size="29" font-weight="800" fill="#b94452">0</text>
+  </g>
+
+  <!-- desk -->
+  <path d="M37 277H923V313H37Z" fill="#a96f50" class="outline"/>
+  <path d="M62 313H91V342H62Z M868 313H897V342H868Z" fill="#755143" class="outline"/>
+  <path d="M210 313H612V338H210Z" fill="#8d614e" class="outline"/>
+  <path d="M222 323H600" stroke="#c58b68" stroke-width="3"/>
+  <rect x="384" y="318" width="54" height="7" rx="4" fill="#e2b676"/>
+
+  <!-- monitor -->
+  <rect x="300" y="49" width="440" height="213" rx="15" fill="#4b4245" class="outline"/>
+  <rect x="317" y="67" width="406" height="177" rx="7" fill="#151923" stroke="#786d72" stroke-width="3"/>
+  <rect x="324" y="74" width="392" height="163" rx="4" fill="#202736" class="screen-glow"/>
+  <circle cx="337" cy="85" r="5" fill="#d36d7d"/>
+  <circle cx="353" cy="85" r="5" fill="#e5bc66"/>
+  <circle cx="369" cy="85" r="5" fill="#79b881"/>
+  <text x="340" y="119" class="terminal" fill="#7fd4e8">farefray@github</text>
+  <text x="486" y="119" class="terminal">:</text>
+  <text x="496" y="119" class="terminal" fill="#c9a7ee">~</text>
+  <text x="508" y="119" class="terminal">$ ./continue_anyway</text>
+  <text x="340" y="178" class="terminal" fill="#b9b6c5">status:</text>
+  <text x="418" y="178" class="terminal" font-weight="700" fill="#8ad295">probably fine</text>
+  <rect x="546" y="165" width="10" height="16" rx="1" fill="#8ad295" class="cursor"/>
+  <path d="M490 262V280 M445 280H535" stroke="#4b4245" stroke-width="13" stroke-linecap="round"/>
+
+  <!-- coffee steam sits behind the note and cup -->
+  <path d="M791 246 C776 230 802 218 788 202" class="steam"/>
+  <path d="M815 246 C831 228 806 216 820 198" class="steam two"/>
+
+  <!-- sticky note -->
+  <g transform="rotate(4 756 188)">
+    <rect x="720" y="146" width="72" height="70" rx="3" fill="#f0b8cc" class="outline"/>
+    <text x="730" y="175" class="note" fill="#4c3444">TODO:</text>
+    <text x="730" y="197" class="note" fill="#4c3444">EVERYTHING</text>
+  </g>
+
+  <!-- a small cortado: still critical infrastructure -->
+  <ellipse cx="804" cy="298" rx="47" ry="8" fill="#564746" opacity=".18"/>
+  <path d="M777 248H831L827 288C826 298 820 302 811 302H797C788 302 782 298 781 288Z" fill="#f1d5c2" fill-opacity=".5" class="outline"/>
+  <path d="M782 254H826L823 287C822 294 817 297 811 297H798C792 297 787 294 786 287Z" fill="#bd7657" opacity=".86"/>
+  <ellipse cx="804" cy="249" rx="27" ry="8" fill="#f1d5c2" class="outline"/>
+  <ellipse cx="804" cy="249" rx="20" ry="5" fill="#5a3028"/>
+  <path d="M785 257L788 286C789 291 792 294 797 295" fill="none" stroke="#fff8ef" stroke-width="3" stroke-linecap="round" opacity=".72"/>
+  <!-- simplified split trackball keyboard -->
+  <g>
+    <path d="M266 280L365 264L432 278L417 310L277 308Z" fill="#3e3a41" class="outline"/>
+    <path d="M478 278L545 264L644 280L633 308L493 310Z" fill="#3e3a41" class="outline"/>
+
+    <g transform="rotate(-8 330 286)">
+      <rect x="278" y="271" width="20" height="11" rx="3" class="key"/><rect x="302" y="269" width="20" height="11" rx="3" class="key"/><rect x="326" y="267" width="20" height="11" rx="3" class="key"/><rect x="350" y="269" width="20" height="11" rx="3" class="key"/>
+      <rect x="278" y="285" width="20" height="11" rx="3" class="key"/><rect x="302" y="283" width="20" height="11" rx="3" class="key"/><rect x="326" y="281" width="20" height="11" rx="3" class="key"/><rect x="350" y="283" width="20" height="11" rx="3" class="key"/>
+      <rect x="278" y="299" width="20" height="11" rx="3" class="key"/><rect x="302" y="297" width="20" height="11" rx="3" class="key"/><rect x="326" y="295" width="20" height="11" rx="3" class="key"/><rect x="350" y="297" width="20" height="11" rx="3" class="key"/>
+    </g>
+    <rect x="369" y="283" width="22" height="12" rx="3" transform="rotate(19 380 289)" class="key"/>
+    <rect x="383" y="296" width="24" height="12" rx="3" transform="rotate(28 395 302)" class="key"/>
+
+    <g transform="rotate(8 580 286)">
+      <rect x="540" y="269" width="20" height="11" rx="3" class="key"/><rect x="564" y="267" width="20" height="11" rx="3" class="key"/><rect x="588" y="269" width="20" height="11" rx="3" class="key"/><rect x="612" y="271" width="20" height="11" rx="3" class="key"/>
+      <rect x="540" y="283" width="20" height="11" rx="3" class="key"/><rect x="564" y="281" width="20" height="11" rx="3" class="key"/><rect x="588" y="283" width="20" height="11" rx="3" class="key"/><rect x="612" y="285" width="20" height="11" rx="3" class="key"/>
+      <rect x="540" y="297" width="20" height="11" rx="3" class="key"/><rect x="564" y="295" width="20" height="11" rx="3" class="key"/><rect x="588" y="297" width="20" height="11" rx="3" class="key"/><rect x="612" y="299" width="20" height="11" rx="3" class="key"/>
+    </g>
+    <rect x="519" y="283" width="22" height="12" rx="3" transform="rotate(-19 530 289)" class="key"/>
+    <rect x="503" y="296" width="24" height="12" rx="3" transform="rotate(-28 515 302)" class="key"/>
+
+    <circle cx="419" cy="282" r="21" fill="#302c32" class="outline"/>
+    <circle cx="491" cy="282" r="21" fill="#302c32" class="outline"/>
+    <circle cx="419" cy="280" r="14" class="trackball"/>
+    <circle cx="491" cy="280" r="14" class="trackball"/>
+    <circle cx="414" cy="275" r="4" fill="#f5c6ca" opacity=".55"/>
+    <circle cx="486" cy="275" r="4" fill="#f5c6ca" opacity=".55"/>
+  </g>
+</svg>
